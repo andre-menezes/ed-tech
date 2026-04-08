@@ -1,0 +1,18 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.two-columns {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+  }
+}
